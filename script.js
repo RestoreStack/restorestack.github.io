@@ -1,5 +1,5 @@
 const API_ENDPOINT = "https://api.restorestack.com/submit"; 
-// nanti ganti dengan endpoint tunnel kamu
+// endpoint tunnel
 
 const form = document.getElementById("restoreForm");
 const message = document.getElementById("formMessage");
