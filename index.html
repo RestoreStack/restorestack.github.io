@@ -2,83 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RestoreStack - WordPress Disaster Recovery</title>
+    <title>RestoreStack - WordPress Recovery Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automated WordPress disaster recovery from Wayback snapshots. Secure. Minimal. CLI-driven.">
+    <meta name="description" content="Recover your hacked WordPress website from Wayback Machine snapshots. No server access required.">
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-    <div class="container">
-        <h1>RestoreStack</h1>
-        <p class="tagline">
-            WordPress Disaster Recovery from Wayback Snapshots
-        </p>
-        <p class="subtext">
-            Automated. Secure. CLI-driven. No bloated SaaS.
-        </p>
-        <a href="#submit" class="btn-primary">Start Restore</a>
+<header class="navbar">
+    <div class="container nav-inner">
+        <div class="logo">RestoreStack</div>
+        <a href="#pricing" class="nav-cta">View Pricing</a>
     </div>
 </header>
 
-<section class="problem">
+<section class="hero">
     <div class="container">
-        <h2>Website Suspended? No Backup?</h2>
-        <p>
-            RestoreStack rebuilds your WordPress site from a Wayback Machine snapshot.
-            We download assets, clean archive rewrites, rebuild WordPress,
-            and generate a ready-to-restore backup package.
+        <h1>Website Hacked?<br>No Clean Backup?</h1>
+        <p class="hero-sub">
+            We rebuild your WordPress website from archived snapshots and deliver a clean, ready-to-upload package.
         </p>
+        <a href="#submit" class="btn-primary">Check My Snapshot</a>
     </div>
 </section>
 
-<section class="features">
-    <div class="container grid">
-        <div class="card">
-            <h3>Full Snapshot Extraction</h3>
-            <p>HTML, CSS, JS, images and assets retrieved from archive.</p>
+<section class="problem">
+    <div class="container">
+        <h2>When This Service Is For You</h2>
+        <div class="problem-grid">
+            <div>🚨 Hosting suspended your site</div>
+            <div>⚠️ Your backup is infected</div>
+            <div>❌ Developer disappeared</div>
+            <div>🕒 You only have Wayback archive left</div>
         </div>
-        <div class="card">
-            <h3>Malware Pattern Scan</h3>
-            <p>Detects common injected payloads and suspicious code.</p>
-        </div>
-        <div class="card">
-            <h3>WordPress Rebuild</h3>
-            <p>Fresh WordPress install with restored content structure.</p>
-        </div>
-        <div class="card">
-            <h3>Downloadable Backup</h3>
-            <p>ZIP package delivered via email for manual restore.</p>
+    </div>
+</section>
+
+<section class="trust">
+    <div class="container">
+        <h2>No Risk. No Server Access Required.</h2>
+        <ul>
+            <li>✔ We do NOT need your hosting login</li>
+            <li>✔ We do NOT access your server</li>
+            <li>✔ We only use public archived snapshots</li>
+            <li>✔ You receive a clean WordPress-ready package</li>
+        </ul>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2>Simple, Transparent Pricing</h2>
+
+        <div class="pricing-grid">
+
+            <div class="card">
+                <h3>Basic Recovery</h3>
+                <p class="price">$79</p>
+                <ul>
+                    <li>Up to 20 pages</li>
+                    <li>WordPress import file</li>
+                    <li>Cleaned media assets</li>
+                    <li>Delivery in 48 hours</li>
+                </ul>
+            </div>
+
+            <div class="card featured">
+                <h3>Standard Recovery</h3>
+                <p class="price">$129</p>
+                <ul>
+                    <li>Up to 100 pages</li>
+                    <li>Full WordPress package</li>
+                    <li>Media relinked & cleaned</li>
+                    <li>Delivery in 72 hours</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Advanced Recovery</h3>
+                <p class="price">$199+</p>
+                <ul>
+                    <li>Large websites</li>
+                    <li>WooCommerce supported</li>
+                    <li>Manual layout adjustments</li>
+                    <li>Priority queue</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </section>
 
 <section id="submit" class="submit">
     <div class="container">
-        <h2>Submit Wayback Snapshot</h2>
-
-        <form id="restoreForm">
-            <label>Wayback Snapshot URL</label>
-            <input type="url" id="snapshotUrl" required placeholder="https://web.archive.org/...">
-
-            <label>Your Email</label>
-            <input type="email" id="email" required placeholder="you@example.com">
-
-            <button type="submit" class="btn-primary">
-                Submit Restore Request
-            </button>
-
-            <p id="formMessage" class="form-message"></p>
+        <h2>Check If Your Website Can Be Recovered</h2>
+        <form id="snapshotForm">
+            <input type="url" id="snapshotUrl" placeholder="Paste your Wayback snapshot URL here" required>
+            <button type="submit" class="btn-primary">Request Review</button>
         </form>
+        <p class="small-note">We respond within 24 hours.</p>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <p>© 2026 RestoreStack</p>
-        <p class="small">Built for sysadmins, VPS owners, and hosting providers.</p>
+        <p>© 2026 RestoreStack. WordPress Disaster Recovery Service.</p>
     </div>
 </footer>
 
