@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://restorestack.github.io/sitemap.xml
