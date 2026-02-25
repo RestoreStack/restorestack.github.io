@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RestoreStack - WordPress Disaster Recovery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automated WordPress disaster recovery from Wayback snapshots. Secure. Minimal. CLI-driven.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>RestoreStack</h1>
+        <p class="tagline">
+            WordPress Disaster Recovery from Wayback Snapshots
+        </p>
+        <p class="subtext">
+            Automated. Secure. CLI-driven. No bloated SaaS.
+        </p>
+        <a href="#submit" class="btn-primary">Start Restore</a>
+    </div>
+</header>
+
+<section class="problem">
+    <div class="container">
+        <h2>Website Suspended? No Backup?</h2>
+        <p>
+            RestoreStack rebuilds your WordPress site from a Wayback Machine snapshot.
+            We download assets, clean archive rewrites, rebuild WordPress,
+            and generate a ready-to-restore backup package.
+        </p>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container grid">
+        <div class="card">
+            <h3>Full Snapshot Extraction</h3>
+            <p>HTML, CSS, JS, images and assets retrieved from archive.</p>
+        </div>
+        <div class="card">
+            <h3>Malware Pattern Scan</h3>
+            <p>Detects common injected payloads and suspicious code.</p>
+        </div>
+        <div class="card">
+            <h3>WordPress Rebuild</h3>
+            <p>Fresh WordPress install with restored content structure.</p>
+        </div>
+        <div class="card">
+            <h3>Downloadable Backup</h3>
+            <p>ZIP package delivered via email for manual restore.</p>
+        </div>
+    </div>
+</section>
+
+<section id="submit" class="submit">
+    <div class="container">
+        <h2>Submit Wayback Snapshot</h2>
+
+        <form id="restoreForm">
+            <label>Wayback Snapshot URL</label>
+            <input type="url" id="snapshotUrl" required placeholder="https://web.archive.org/...">
+
+            <label>Your Email</label>
+            <input type="email" id="email" required placeholder="you@example.com">
+
+            <button type="submit" class="btn-primary">
+                Submit Restore Request
+            </button>
+
+            <p id="formMessage" class="form-message"></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 RestoreStack</p>
+        <p class="small">Built for sysadmins, VPS owners, and hosting providers.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
